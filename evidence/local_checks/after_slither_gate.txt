@@ -1,0 +1,8 @@
+cwd: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\patched
+command: slither AuditTarget.sol --config-file slither.config.json --fail-medium
+Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+'solc --version' running
+'solc AuditTarget.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\patched' running
+INFO:Slither:AuditTarget.sol analyzed (1 contracts with 64 detectors), 0 result(s) found
+
+exit: 0

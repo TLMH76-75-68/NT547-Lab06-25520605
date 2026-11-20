@@ -22,6 +22,7 @@ if missing:
 files=[base/'AuditTarget.sol',base/'lab_identity.json',base/'slither.config.json',
        base/'report/MAU_BAO_CAO.md',base/'.github/workflows/slither.yml',
        base/'contracts/ArchitectureDemo.sol']
+files.append(base/'tools/check_owner_modifier.py')
 files += [p for p in (base/'evidence').rglob('*') if p.is_file()]
 files=sorted(set(files),key=lambda p:str(p))
 (base/'submissions').mkdir(exist_ok=True)

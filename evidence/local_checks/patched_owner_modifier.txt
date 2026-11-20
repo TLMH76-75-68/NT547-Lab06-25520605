@@ -1,0 +1,5 @@
+cwd: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\patched
+command: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\python.exe tools/check_owner_modifier.py
+PASS: onlyOwner contains no tx.origin (supplementary source check)
+
+exit: 0

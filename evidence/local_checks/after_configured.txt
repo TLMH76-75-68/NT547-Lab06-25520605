@@ -1,0 +1,6 @@
+cwd: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\patched
+command: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\python.exe tools/scan.py --mode configured --tag after
+DONE: evidence\after_configured | issues= 0 | {'High': 0, 'Medium': 0, 'Low': 0, 'Informational': 0, 'Optimization': 0, 'Other': 0}
+Nop: slither.json, findings.csv, summary.json, command_and_output.txt
+
+exit: 0
