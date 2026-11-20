@@ -1,0 +1,42 @@
+COMMAND: slither AuditTarget.sol --config-file slither.config.json --fail-none --json evidence\before_configured\slither.json
+SLITHER_VERSION:
+0.11.6
+
+SOLC_VERSION:
+solc, the solidity compiler commandline interface
+Version: 0.8.24+commit.e11b9ed9.Windows.msvc
+
+
+Detector: weak-prng
+Treasury_0605.pickWinner() (AuditTarget.sol#49-56) uses a weak PRNG: "idx = block.timestamp % entrants.length (AuditTarget.sol#51)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Detector: controlled-delegatecall
+Treasury_0605.execute(address,bytes) (AuditTarget.sol#72-75) uses delegatecall to a input-controlled function id
+	- (ok,None) = target.delegatecall(data) (AuditTarget.sol#73)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#controlled-delegatecall
+
+Detector: reentrancy-eth
+Reentrancy in Treasury_0605.claim() (AuditTarget.sol#64-70):
+	External calls:
+	- (ok,None) = msg.sender.call{value: amount}() (AuditTarget.sol#67)
+	State variables written after the call(s):
+	- ledger[msg.sender] = 0 (AuditTarget.sol#69)
+	Treasury_0605.ledger (AuditTarget.sol#12) can be used in cross function reentrancies:
+	- Treasury_0605.claim() (AuditTarget.sol#64-70)
+	- Treasury_0605.ledger (AuditTarget.sol#12)
+	- Treasury_0605.topUp() (AuditTarget.sol#27-30)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+Detector: incorrect-equality
+Treasury_0605.zeroBalance() (AuditTarget.sol#77-79) uses a dangerous strict equality:
+	- address(this).balance == 0 (AuditTarget.sol#78)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Detector: tx-origin
+Treasury_0605.handOver(address) (AuditTarget.sol#58-62) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,not owner) (AuditTarget.sol#59)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-usage-of-txorigin
+AuditTarget.sol analyzed (2 contracts with 64 detectors), 5 result(s) found
+Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+'solc --version' running
+'solc AuditTarget.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\baseline' running

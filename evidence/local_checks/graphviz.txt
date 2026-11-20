@@ -1,0 +1,5 @@
+cwd: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\baseline
+command: dot -V
+dot - graphviz version 16.1.1 (20261108.1752)
+
+exit: 0

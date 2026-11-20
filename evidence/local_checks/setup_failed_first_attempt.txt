@@ -1,0 +1,63 @@
+COMMAND: slither AuditTarget.sol --config-file config/slither.raw.json --fail-none --json evidence\before_raw\slither.json
+SLITHER_VERSION:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\TLMH\\.solc-select\\artifacts'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\slither.exe\__main__.py", line 4, in <module>
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\slither\__init__.py", line 5, in <module>
+    from .slither import Slither
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\slither\slither.py", line 3, in <module>
+    from crytic_compile import CryticCompile, InvalidCompilation
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\__init__.py", line 15, in <module>
+    from .compilation_unit import CompilationUnit
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\compilation_unit.py", line 14, in <module>
+    from crytic_compile.compiler.compiler import CompilerVersion
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\compiler\compiler.py", line 5, in <module>
+    from solc_select.solc_select import install_artifacts, installed_versions
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\solc_select\solc_select.py", line 38, in <module>
+    Path.mkdir(ARTIFACTS_DIR, parents=True, exist_ok=True)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1315, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\TLMH\\.solc-select'
+
+SOLC_VERSION:
+solc, the solidity compiler commandline interface
+Version: 0.8.24+commit.e11b9ed9.Windows.msvc
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\TLMH\\.solc-select\\artifacts'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\slither.exe\__main__.py", line 4, in <module>
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\slither\__init__.py", line 5, in <module>
+    from .slither import Slither
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\slither\slither.py", line 3, in <module>
+    from crytic_compile import CryticCompile, InvalidCompilation
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\__init__.py", line 15, in <module>
+    from .compilation_unit import CompilationUnit
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\compilation_unit.py", line 14, in <module>
+    from crytic_compile.compiler.compiler import CompilerVersion
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\crytic_compile\compiler\compiler.py", line 5, in <module>
+    from solc_select.solc_select import install_artifacts, installed_versions
+  File "C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Lib\site-packages\solc_select\solc_select.py", line 38, in <module>
+    Path.mkdir(ARTIFACTS_DIR, parents=True, exist_ok=True)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1315, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\python\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\TLMH\\.solc-select'

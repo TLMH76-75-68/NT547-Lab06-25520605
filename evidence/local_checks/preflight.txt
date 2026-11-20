@@ -1,0 +1,17 @@
+cwd: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\baseline
+command: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\python.exe tools/preflight.py
+Python: 3.12.14
+git OK: C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1119-907-0_26.1119.907.0_x64__3k8sg7r9htsxt\dependencies\native\git\cmd\git.EXE
+slither OK: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\venv\Scripts\slither.EXE
+solc OK: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\bin\solc.EXE
+dot OK: C:\Users\TLMH\Documents\Codex\2026-11-20\h-y-m-v-c-to\work\graphviz\Graphviz-16.1.1-win64\bin\dot.EXE
+file tools/create_lab.py OK
+file tools/scan.py OK
+file tools/print_arch.py OK
+file config/slither.raw.json OK
+file slither.config.json OK
+file .github/workflows/slither.yml OK
+file contracts/ArchitectureDemo.sol OK
+Tip: chay trong THU MUC 01_SINH_VIEN (thu muc chua tools/).
+
+exit: 0
